@@ -1,0 +1,32 @@
+{
+  "projectileName" : "pat_peltingbrick",
+  "physics" : "grenade",
+  "image" : "brick.png",
+	"renderLayer" : "player+1",
+	"flippable" : true,
+	"piercing" : true,
+	"speed" : 70,
+	"power" : 1,
+  "knockback" : 8,
+	"damageKind" : "hammer",
+	"damageType" : "IgnoresDef",
+	"damageTeam" : {"type" : "indiscriminate"},
+  "movementSettings" : {
+		"collisionEnabled" : false,
+		"gravityMultiplier" : 1.2
+	},
+	"actionOnReap" : [
+		{
+      "action" : "sound",
+      "options" : ["/sfx/gun/impact_stone1.ogg", "/sfx/gun/impact_stone2.ogg", "/sfx/gun/impact_stone3.ogg", "/sfx/gun/impact_stone4.ogg", "/sfx/gun/impact_stone5.ogg", "/sfx/gun/impact_stone6.ogg", "/sfx/gun/impact_stone7.ogg", "/sfx/gun/impact_stone8.ogg"]
+    },
+    {
+      "action" : "loop",
+      "count" : 12,
+      "body" : [
+        { "action" : "spark" }
+      ]
+    }
+	],
+	"scripts" : ["brick.lua"]
+}

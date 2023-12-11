@@ -1,0 +1,7 @@
+[
+  {
+    "op": "add",
+    "path": "/genericScriptContexts/pat_peltwithbricks",
+    "value": "/pat/peltwithbricks/peltwithbricks.lua"
+  }
+]
